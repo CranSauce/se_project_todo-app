@@ -4,20 +4,18 @@ This project is a basic Todo application that allows users to manage their tasks
 
 ## Functionality
 
-*Add new tasks with a name and due date.
-*Edit existing tasks.
-*Delete tasks.
-*Mark tasks as completed.
-*Form validation to ensure all fields are correctly filled.
+- Add new tasks with a name and due date.
+- Edit existing tasks.
+- Delete tasks.
+- Mark tasks as completed.
+- Form validation to ensure all fields are correctly filled.
 
 ## Technology
 
-This project uses the following technologies and techniques:
-
-*HTML, CSS, and JavaScript for the front end.
-*Form validation with a custom FormValidator class.
-*UUID for unique task IDs.
-*GitHub Pages for deployment.
+- HTML, CSS, and JavaScript for the front end.
+- Form validation with a custom `FormValidator` class.
+- UUID for unique task IDs.
+- GitHub Pages for deployment.
 
 ## Deployment
 
