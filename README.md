@@ -1,17 +1,26 @@
 # Simple Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This project is a basic Todo application that allows users to manage their tasks. Users can add, edit, and delete tasks, as well as mark them as completed.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+*Add new tasks with a name and due date.
+*Edit existing tasks.
+*Delete tasks.
+*Mark tasks as completed.
+*Form validation to ensure all fields are correctly filled.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+This project uses the following technologies and techniques:
+
+*HTML, CSS, and JavaScript for the front end.
+*Form validation with a custom FormValidator class.
+*UUID for unique task IDs.
+*GitHub Pages for deployment.
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- [Simple Todo App](https://cransauce.github.io/se_project_todo-app/)
