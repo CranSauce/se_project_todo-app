@@ -1,16 +1,23 @@
 class Todo {
-  constructor(data, selector) {
+  constructor(data, selector, todoCounter) {
     this._data = data;
     this._templateElement = document.querySelector(selector);
+    this._todoCounter = todoCounter; 
   }
 
   setEventListeners() {
     this._todoDeleteBtn.addEventListener("click", () => {
+      if (this._data.completed) {
+        this._todoCounter.updateCompleted(false); // Decrement completed todos -- These two make sure if a box is checked and deleted, the value is subtracted from X and Y
+      }
       this._todoElement.remove();
+      this._todoCounter.updateTotal(false); // Decrement total todos
     });
 
     this._todoCheckboxEl.addEventListener("change", () => {
-      this._data.completed = !this._data.completed;
+      const isChecked = this._todoCheckboxEl.checked;
+      this._data.completed = isChecked;
+      this._todoCounter.updateCompleted(isChecked); // Update completed todos
     });
   }
 
@@ -44,10 +51,6 @@ class Todo {
         day: "numeric",
       })}`;
     }
-
-    //   todoDeleteBtn.addEventListener("click", () => {
-    //     todoElement.remove();
-    //   });
 
     return this._todoElement;
   }
